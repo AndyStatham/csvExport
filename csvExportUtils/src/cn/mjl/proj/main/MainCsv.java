@@ -23,12 +23,8 @@ public class MainCsv {
 
 	public static void main(String[] args) throws ParseException {
 		try {
-			System.out.println("11111");
 			initialize();
-			System.out.println("12111");
-
 			exportCsv();
-			System.out.println("12611");
 			logCycle();
 		} catch (SQLException e) {
 			log.error(e);
@@ -39,7 +35,7 @@ public class MainCsv {
 	 * 初始化，新建文件夹
 	 ***/
 	public static void initialize() {
-		File directory = new File("");	
+		File directory = new File("");
 		try {
 			directorysString = directory.getAbsolutePath();
 			log.info("getAbsolutePath");
@@ -74,16 +70,12 @@ public class MainCsv {
 		ResultSet result = null;
 		Connection conn = null;
 		String sql = getProperty("contact.url.mysql.sql");
-System.out.println(sql);
 		String outFile = directorysString + "/CSVTest/create.csv";
 		CsvWriter writer = new CsvWriter(outFile, ',', Charset.forName("utf-8"));
 		try {
 			conn = getcon();
 			stmt = conn.createStatement();
-
 			result = stmt.executeQuery(sql);
-			System.out.println("test");
-
 			log.info("连接数据成功");
 			while (result.next()) {
 				login_id = result.getString("login_id");
@@ -136,7 +128,7 @@ System.out.println(sql);
 	 * 
 	 * ***/
 	public static void logCycle() {
-		String logPath = directorysString+"/logs";
+		String logPath = directorysString + "/logs";
 		Date nowDate = new Date();
 		File file = new File(logPath);
 		File[] filesList = file.listFiles();
@@ -163,7 +155,8 @@ System.out.println(sql);
 					if (day > 6) {
 						String bTempString = "csvExportUtils-" + strTemp
 								+ "-1.log.gz";
-						String bPathString = directorysString + "/logs/" + bTempString;
+						String bPathString = directorysString + "/logs/"
+								+ bTempString;
 						f = new File(bPathString);
 						if (f.exists()) {
 							f.delete();

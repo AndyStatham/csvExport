@@ -101,3 +101,23 @@ The last packe2016-11-23 21:31:23.000 ERROR [main][MainCsv.java:129] - com.mysql
 The last packe2016-11-23 21:32:21.092 ERROR [main][MainCsv.java:129] - com.mysql.jdbc.exceptions.jdbc4.CommunicationsException: Communications link failure
 
 The last packet sent successfully to the server was 0 milliseconds ago. The driver has not received any packets from the server.
+2016-11-23 21:32:32.458 INFO [main][MainCsv.java:45] - getAbsolutePath
+2016-11-23 21:32:32.466 INFO [main][MainCsv.java:126] - 成功加载MySQL驱动程序
+2016-11-23 21:32:37.192 INFO [main][MainCsv.java:45] - getAbsolutePath
+2016-11-23 21:32:37.199 INFO [main][MainCsv.java:126] - 成功加载MySQL驱动程序
+2016-11-23 21:33:00.600 INFO [main][MainCsv.java:45] - getAbsolutePath
+2016-11-23 21:33:00.608 INFO [main][MainCsv.java:126] - 成功加载MySQL驱动程序
+2016-11-23 21:47:50.474 INFO [main][MainCsv.java:45] - getAbsolutePath
+2016-11-23 21:47:50.486 INFO [main][MainCsv.java:126] - 成功加载MySQL驱动程序
+2016-11-23 21:47:50.795 INFO [main][MainCsv.java:87] - 连接数据成功
+2016-11-23 21:47:50.798 INFO [main][MainCsv.java:143] - length=6
+2016-11-23 21:48:49.009 INFO [main][MainCsv.java:41] - getAbsolutePath
+2016-11-23 21:48:49.011 INFO [main][MainCsv.java:57] - 旧文件删除
+2016-11-23 21:48:49.020 INFO [main][MainCsv.java:119] - 成功加载MySQL驱动程序
+2016-11-23 21:48:49.324 INFO [main][MainCsv.java:80] - 连接数据成功
+2016-11-23 21:48:49.328 INFO [main][MainCsv.java:136] - length=6
+2016-11-23 21:49:01.689 INFO [main][MainCsv.java:41] - getAbsolutePath
+2016-11-23 21:49:01.690 INFO [main][MainCsv.java:57] - 旧文件删除
+2016-11-23 21:49:01.697 INFO [main][MainCsv.java:118] - 成功加载MySQL驱动程序
+2016-11-23 21:49:01.962 INFO [main][MainCsv.java:79] - 连接数据成功
+2016-11-23 21:49:01.966 INFO [main][MainCsv.java:135] - length=6
